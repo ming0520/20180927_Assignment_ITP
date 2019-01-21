@@ -1,0 +1,118 @@
+body {
+    font-family: Raleway;
+    background: rgba(25, 240, 21, 0.5);
+    background-image: url(../../img/homepage/technology_Quiz_Background_Chip.jpg);
+    background-repeat: cover;
+}
+
+.container {
+    height: 25rem;
+    width: 75rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(25, 240, 21, 0.5);
+    padding: 20px;
+    border: 1px solid #4CAF50;
+    box-shadow: 0 0 8px 3px #fff;
+}
+
+.title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.question {
+    padding: 20px;
+    font-size: 22px;
+    background: rgba(25, 240, 21, 0.6);
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #fff;
+}
+
+.option {
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.option:hover {
+    background: rgba(25, 240, 21, 0.5);
+    color: #f6f6f6;
+}
+
+.next-btn {
+    background-color: rgba(25, 240, 21, 0.3);
+    color: #ffffff;
+    border: 3px double #fff;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    float: right;
+}
+
+.next-btn:hover {
+    color: yellow;
+    opacity: 1;
+    border-radius: 2px;
+    transition: 0.5s;
+    background-color: rgba(25, 240, 21, 0.8);
+    ;
+    border: 5px double yellow;
+    font-weight: bold;
+    padding: 15px 25px;
+}
+
+#submitBtn {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#resultTxt {
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px double yellow;
+    text-align: center;
+
+}
+
+.result {
+    height: 250px;
+    text-align: center;
+    font-size: 60px;
+    color: #f6f6f5;
+    border: 5px double yellow;
+}
+
+.option input:checked .option {
+    background: #4CAF50;
+    color: #000;
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        width: 666px;
+        height: 555px;
+        top: 400px;
+    }
+    .result {
+        height: 250px;
+        text-align: center;
+        font-size: 60px;
+    }
+}

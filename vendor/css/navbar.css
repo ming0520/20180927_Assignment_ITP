@@ -1,0 +1,179 @@
+/* ----------------------------Styling for nav bar------------------------*/
+
+/* Set margin for nav bar by tag name*/
+nav
+{
+	margin: 0% auto;
+  z-index: 9999;
+}
+
+.form-inline
+{
+  margin-left: 5px;
+}
+
+.active
+{
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar
+{
+  padding: 0% 10%;
+}
+
+.navbar
+{
+  min-width: 250px;
+  background-color: #fff;
+  box-shadow: 2px 2px #888888;
+}
+
+.navbar-brand img {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  max-width: 50px;
+}
+
+.nav-link
+{
+  margin-top:1.2rem;
+}
+
+.nav-user{
+  color:purple;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+  text-decoration: none;
+}
+
+/* Set maximun width, margin and hide the input field for email and password*/
+#password,#email
+{
+	max-width: 300px;
+	margin: 2.5px 5px;
+}
+/* Change the style for login button which used id = "loginBtn */
+#loginBtn
+{
+background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+/* Set background color and border when hover on the item in nav bar*/
+.nav-item:hover
+{
+	background-color: rgba(233,233,233,0.4);
+	border-bottom: 1px solid red;
+  transition: 0.5s;
+  padding: 5px;
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .navbar-toggler-icon 
+{
+    margin:5% 2.5%;
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 1250px) 
+{
+  .navbar-nav a:not(:first-child) {display: none;}
+
+  .navbar .navbar-toggler-icon 
+  {
+    float: right;
+    display: block;
+  }
+
+  #loginBtn,#email,#password
+  {
+  	display: none;
+  }
+
+  .navbar-brand
+  {
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1250px) 
+{
+
+  .navbar.responsive {position: relative;}
+
+  .navbar.responsive a.icon 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+    margin:5% 5%;
+  }
+
+  .navbar-brand
+  {
+    display: block;
+  }
+}
+
+/*-------------Position Styling----------------*/
+.position-static {
+  position: static !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-fixed {
+  position: fixed !important;
+}
+
+.position-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+/*-------------End of Position Styling--------------*/
+
+/* ----------------------------END of Styling for nav bar--------------------*/

@@ -1,0 +1,224 @@
+/* News Pannel config */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #efebdc !important;
+}
+
+.news-pannel {
+    background-size: 1280px 768px;
+    background-repeat: no-repeat;
+    float: left;
+    opacity: 0.9;
+
+}
+
+
+.news-pannel:hover {
+    opacity: 0.9;
+    border: 8px double purple;
+    transition: 0.75s;
+    padding: 1%;
+    opacity: 0.8;
+    padding-bottom: 1%;
+
+}
+
+.news-heading {
+    border-bottom: 2px solid rgba(225, 210, 225, 0.7);
+}
+
+.news-pannel .news-icon {
+    text-align: center;
+}
+
+.news-icon {
+    margin-bottom: 50px;
+}
+
+.news-heading,
+.news-caption {
+    text-shadow: 0.5px 0.5px 1px #000000;
+    color: #FFFFFF;
+}
+
+.news-caption {
+    height: 230px;
+}
+
+.news-wrapper {
+    padding: 10%;
+}
+
+
+/* News Pannel config end here! */
+
+/* Overlay Color here */
+
+.overlay-blue {
+    background-color: rgba(13, 240, 255, 0.5);
+}
+
+.overlay-red {
+    background-color: rgba(255, 10, 10, 0.5);
+}
+
+.overlay-orange {
+    background-color: rgba(255, 139, 15, 0.5);
+}
+
+.overlay-green {
+    background-color: rgba(25, 240, 21, 0.5);
+}
+
+
+/* Overlay Color end here! */
+
+/* Responsive config */
+
+.col-sm-2 {
+    position: relative;
+    width: 73%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/* Responsive config end here*/
+
+/* Button */
+
+.btn-news {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-news span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-news span:after {
+    content: '\02771\02771';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-news:hover span {
+    padding-right: 25px;
+}
+
+.btn-news:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn-news:hover {
+    opacity: 1;
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.btn-news {
+    font-weight: font-family: "Times New Roman", Times, serif;
+    width: 90%;
+    opacity: 0.9;
+}
+
+.btn-outline-red {
+    color: rgba(24, 240, 255, 0);
+    background-color: #FFF;
+    background-image: none;
+    color: rgba(255, 10, 10, 1);
+    text-shadow: 0.3px 0.3px 0px #000;
+    font-weight: font-family: "Times New Roman", Times, serif;
+}
+
+
+
+.btn-outline-orange {
+    color: rgba(24, 240, 255, 0);
+    background-color: #FFF;
+    background-image: none;
+    color: rgba(255, 139, 15, 1);
+    text-shadow: 0.3px 0.3px 0px #000;
+    font-weight: font-family: "Times New Roman", Times, serif;
+}
+
+
+
+.btn-outline-blue {
+    color: rgba(24, 240, 255, 1);
+    background-color: #FFF;
+    background-image: none;
+    text-shadow: 0.3px 0.13px 0px #000;
+    font-weight: font-family: "Times New Roman", Times, serif;
+}
+
+.btn-outline-green {
+    color: rgba(25, 240, 21, 1);
+    background-color: #FFF;
+    background-image: none;
+    color: rgba(15, 139, , 1);
+    text-shadow: 0.3px 0.13px 0px #000;
+    font-weight: font-family: "Times New Roman", Times, serif;
+}
+
+.btn-outline-red:hover {
+    color: white;
+    background-color: rgba(255, 10, 10, 0.3);
+    text-shadow: 2px 2px 0px #000;
+}
+
+.btn-outline-blue:hover {
+    color: white;
+    background-color: rgba(24, 240, 255, 0.3);
+    text-shadow: 1px 1px 0.2px #000;
+}
+
+.btn-outline-orange:hover {
+    color: white;
+    background-color: rgba(255, 139, 15, 0.3);
+    text-shadow: 1px 1px 0.2px #000;
+}
+
+.btn-outline-green:hover {
+    color: white;
+    background-color: rgba(25, 240, 21, 0.3);
+    text-shadow: 1px 1px 0.2px #000;
+}
+
+/*.btn-outline-green:hover {
+    color: black;
+    background-color: #FFF;
+    color: black;
+    text-indent: 1em;
+    transition: 0.35s;
+}*/
+
+.bg-purple {
+    background-color: purple;
+    clear: both;
+}
+
+.bg-purple-ad {
+    background-color: purple;
+    color: purple;
+    clear: both;
+}
